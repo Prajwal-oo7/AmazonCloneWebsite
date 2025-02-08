@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tracking</title>
+
+        <!-- This code is needed for responsive design to work.
+      (Responsive design = make the website look good on
+      smaller screen sizes like a phone or a tablet). -->
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <!-- Load a font called Roboto from Google Fonts. -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Here are the CSS files for this page. -->
+        <link rel="stylesheet" href="styles/general.css" />
+        <link rel="stylesheet" href="styles/header.css" />
+        <link rel="stylesheet" href="styles/tracking.css" />
+    </head>
+    <body>
+        <header class="amazon-header">
+            <div class="header-left-section">
+                <a class="amazon-header-link" href="amazon-homepage.html">
+                    <img
+                        class="amazon-logo"
+                        src="images/amazon-logo-white.png"
+                    />
+                    <img
+                        class="amazon-mobile-logo"
+                        src="images/amazon-mobile-logo-white.png"
+                    />
+                </a>
+            </div>
+
+            <section class="header-mid-section">
+                <div class="header-location link-border">
+                    <p class="deliverTo-text">Deliver to</p>
+                    <div class="location-info">
+                        <img
+                            class="location-icon"
+                            src="images/icons/location-dot-solid.svg"
+                            alt="location tag"
+                        />
+                        <p class="location-origin">India</p>
+                    </div>
+                </div>
+                <div class="search-bar">
+                    <input
+                        class="search-input"
+                        type="text"
+                        placeholder="Search"
+                    />
+                    <button class="search-button">
+                        <img
+                            class="search-icon"
+                            src="images/icons/magnifying-glass-solid.svg"
+                            alt="search-icon"
+                        />
+                    </button>
+                </div>
+            </section>
+
+            <div class="header-right-section">
+                <a
+                    class="header-orders-link link-border"
+                    href="amazon-orders.html"
+                >
+                    <span class="returns-text">Returns</span>
+                    <span class="orders-text">& Orders</span>
+                </a>
+                <a class="header-cart-link link-border" href="checkout.html">
+                    <img
+                        class="cart-icon"
+                        src="images/icons/cart-icon.png"
+                    />
+                    <div class="cart-quantity">3</div>
+                    <div class="cart-text">Cart</div>
+                </a>
+            </div>
+        </header>
+
+        <main>
+            <a
+                class="back-to-orders-link link-primary"
+                href="amazon-orders.html"
+                >View all orders
+            </a>
+            <div class="order-tracking">
+                <div class="delivery-date">Arriving on Monday, June 13</div>
+
+                <div class="product-info">
+                    Black and Gray Athletic Cotton Socks - 6 Pairs
+                </div>
+
+                <div class="product-info">Quantity: 1</div>
+
+                <img
+                    class="product-image"
+                    src="images/products/athletic-cotton-socks-6-pairs.jpg"
+                />
+
+                <div class="progress-labels-container">
+                    <div class="progress-label">Preparing</div>
+                    <div class="progress-label current-status">Shipped</div>
+                    <div class="progress-label">Delivered</div>
+                </div>
+
+                <div class="progress-bar-container">
+                    <div class="progress-bar"></div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

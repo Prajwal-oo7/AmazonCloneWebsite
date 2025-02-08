@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Amazon-clone</title>
+
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="styles/header.css" />
+        <link rel="stylesheet" href="styles/footer.css" />
+        <link rel="stylesheet" href="styles/general.css" />
+        <link rel="stylesheet" href="styles/content_main.css" />
+    </head>
+
+    <body>
+        <header class="amazon-header">
+            <section class="header-left-section">
+                <a class="amazon-header-link" href="amazon-homepage.html">
+                    <img
+                        class="amazon-logo"
+                        src="images/amazon-logo-white.png"
+                    />
+                    <img
+                        class="amazon-mobile-logo"
+                        src="images/amazon-mobile-logo-white.png"
+                    />
+                </a>
+            </section>
+
+            <section class="header-mid-section">
+                <div class="header-location link-border">
+                    <p class="deliverTo-text">Deliver to</p>
+                    <div class="location-info">
+                        <img
+                            class="location-icon"
+                            src="images/icons/location-dot-solid.svg"
+                            alt="location tag"
+                        />
+                        <p class="location-origin">India</p>
+                    </div>
+                </div>
+                <div class="search-bar">
+                    <input
+                        class="search-input"
+                        type="text"
+                        placeholder="Search"
+                    />
+                    <button class="search-button">
+                        <img
+                            class="search-icon"
+                            src="images/icons/magnifying-glass-solid.svg"
+                            alt="search-icon"
+                        />
+                    </button>
+                </div>
+            </section>
+
+            <section class="header-right-section">
+                <a
+                    class="header-orders-link link-border"
+                    href="amazon-orders.html"
+                >
+                    <span class="returns-text">Returns</span>
+                    <span class="orders-text">& Orders</span>
+                </a>
+                <a class="header-cart-link link-border" href="checkout.html">
+                    <img
+                        class="cart-icon"
+                        src="images/icons/cart-icon.png"
+                    />
+                    <div class="cart-quantity js-cart-quantity"></div>
+                    <div class="cart-text">Cart</div>
+                </a>
+            </section>
+        </header>
+
+        <main>
+            <section class="hero-section">
+                <div class="hero-msg">
+                    <p>
+                        You are on amazon.com. You can also shop on Amazon
+                        India. For millions of products with local delivery.
+                        <a href="https://www.amazon.in/"
+                            >Click here to go to amazon.
+                        </a>
+                    </p>
+                </div>
+            </section>
+            <section class="products-grid js-products-grid"></section>
+        </main>
+
+        <footer>
+            <section class="footer-BackToTop">
+                <a onclick="document.documentElement.scrollTop = 0"
+                    >Back To Top
+                </a>
+            </section>
+            <section class="footer-contacts">
+                <ul>
+                    <p>Get to Know Us</p>
+                    <a>About Amazon</a>
+                    <a>Careers</a>
+                    <a>Blog</a>
+                    <a>Amazon devices</a>
+                    <a>Amazon Sciences</a>
+                </ul>
+                <ul>
+                    <p>Connect with Us</p>
+                    <a>Facebook</a>
+                    <a>Instagram</a>
+                    <a>Twitter</a>
+                </ul>
+                <ul>
+                    <p>Make Money with Us</p>
+                    <a>Sell on Amazon</a>
+                    <a>Sell under Amazon Accelerator </a>
+                    <a>Supply to Amazon </a>
+                    <a>Become an Affiliate </a>
+                    <a>Advertise Your Products </a>
+                    <a>Amazon Global Selling </a>
+                </ul>
+                <ul>
+                    <p>Let Us Help You</p>
+                    <a>Your Account </a>
+                    <a>Returns Centre </a>
+                    <a>Recalls and Product Safety Alerts </a>
+                    <a>100% Purchase Protection </a>
+                    <a>Amazon App Download </a>
+                    <a>Help </a>
+                </ul>
+            </section>
+            <section class="footer-logo">
+                <div class="footer-logo-img"></div>
+            </section>
+
+            <section class="footer-terms">
+                <div class="footer-termsPages">
+                    <a>Conditions of use</a>
+                    <a>Privacy Notice</a>
+                    <a>Your Ads Privacy Choices</a>
+                </div>
+                <div class="footer-copyright">
+                    @ 1996-2023, Amazon.com, Inc. or its Affiliates
+                </div>
+            </section>
+        </footer>
+    </body>
+
+    <!-- <script src="data/cart.js"></script> -->
+    <!-- above js file stores product added to cart -->
+    <!-- <script src="data/products.js"></script> -->
+    <!-- above js file creates all the products...order matters! -->
+    <script type="module" src="scripts/amazon-homepage.js"></script>
+    <!-- above js file loops through the products and generates all the html -->
+</html>

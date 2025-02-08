@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Amazon-Orders</title>
+
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="styles/header.css" />
+        <link rel="stylesheet" href="styles/general.css" />
+        <link rel="stylesheet" href="styles/order_main.css" />
+    </head>
+
+    <body style="background-color: white;">
+        <header class="amazon-header">
+            <section class="header-left-section">
+                <a class="amazon-header-link" href="amazon-homepage.html">
+                    <img
+                        class="amazon-logo"
+                        src="images/amazon-logo-white.png"
+                    />
+                    <img
+                        class="amazon-mobile-logo"
+                        src="images/amazon-mobile-logo-white.png"
+                    />
+                </a>
+            </section>
+
+            <section class="header-mid-section">
+                <div class="header-location link-border">
+                    <p class="deliverTo-text">Deliver to</p>
+                    <div class="location-info">
+                        <img
+                            class="location-icon"
+                            src="images/icons/location-dot-solid.svg"
+                            alt="location tag"
+                        />
+                        <p class="location-origin">India</p>
+                    </div>
+                </div>
+                <div class="search-bar">
+                    <input
+                        class="search-input"
+                        type="text"
+                        placeholder="Search"
+                    />
+                    <button class="search-button">
+                        <img
+                            class="search-icon"
+                            src="images/icons/magnifying-glass-solid.svg"
+                            alt="search-icon"
+                        />
+                    </button>
+                </div>
+            </section>
+
+            <section class="header-right-section">
+                <a
+                    class="header-orders-link link-border"
+                    href="amazon-orders.html"
+                >
+                    <span class="returns-text">Returns</span>
+                    <span class="orders-text">& Orders</span>
+                </a>
+                <a class="header-cart-link link-border" href="checkout.html">
+                    <img
+                        class="cart-icon"
+                        src="images/icons/cart-icon.png"
+                    />
+                    <div class="cart-quantity js-cart-quantity">3</div>
+                    <div class="cart-text">Cart</div>
+                </a>
+            </section>
+        </header>
+
+        <main>
+            <section class="page-title">
+                <b>Your Orders</b>
+            </section>
+
+            <section class="orders-grid">
+                <div class="order-container">
+                    <div class="order-header">
+                        <div class="order-header-left-section">
+                            <div class="order-date">
+                                <p><b>Orders placed:-</b></p>
+                                <p>December 16</p>
+                            </div>
+                            <div class="order-total">
+                                <p><b>Total:-</b></p>
+                                <p>$58.01</p>
+                            </div>
+                        </div>
+
+                        <div class="order-header-right-section">
+                            <p><b>Order ID:-</b></p>
+                            <p>9fkgx ukx-xnbskzv-fhbuvsdfa</p>
+                        </div>
+                    </div>
+
+                    <div class="order-details-section">
+                        <div class="order-item">
+                            <div class="product-image-container">
+                                <img
+                                    class="product-image"
+                                    src="images/products/adults-plain-cotton-tshirt-2-pack-teal.jpg"
+                                    alt="adults-plain-cotton-tshirt-2-pack-teal"
+                                />
+                            </div>
+                            <div class="product-details">
+                                <span>
+                                    <b>
+                                        adults-plain-cotton-tshirt-2-pack-teal
+                                    </b>
+                                </span>
+                                <p>Arriving on: December 17</p>
+                                <p>Quantity: 2</p>
+                                <button class="buy-again-button button-primary">
+                                    <img
+                                        class="buy-again-icon"
+                                        src="images/icons/buy-again.png"
+                                    />
+                                    <span class="buy-again-message"
+                                        >Buy it again</span
+                                    >
+                                </button>
+                            </div>
+                            <div class="product-actions">
+                                <a href="tracking.html">
+                                    <button
+                                        class="track-package-button button-secondary"
+                                    >
+                                        Track package
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="order-item">
+                            <div class="product-image-container">
+                                <img
+                                    class="product-image"
+                                    src="images/products/adults-plain-cotton-tshirt-2-pack-teal.jpg"
+                                    alt="adults-plain-cotton-tshirt-2-pack-teal"
+                                />
+                            </div>
+                            <div class="product-details">
+                                <span>
+                                    <b>
+                                        adults-plain-cotton-tshirt-2-pack-teal
+                                    </b>
+                                </span>
+                                <p>Arriving on: December 17</p>
+                                <p>Quantity: 2</p>
+                                <button class="buy-again-button button-primary">
+                                    <img
+                                        class="buy-again-icon"
+                                        src="images/icons/buy-again.png"
+                                    />
+                                    <span class="buy-again-message"
+                                        >Buy it again</span
+                                    >
+                                </button>
+                            </div>
+                            <div class="product-actions">
+                                <a href="tracking.html">
+                                    <button
+                                        class="track-package-button button-secondary"
+                                    >
+                                        Track package
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="order-container">
+                    <div class="order-header">
+                        <div class="order-header-left-section">
+                            <div class="order-date">
+                                <p><b>Orders placed:-</b></p>
+                                <p>December 16</p>
+                            </div>
+                            <div class="order-total">
+                                <p><b>Total:-</b></p>
+                                <p>$58.01</p>
+                            </div>
+                        </div>
+
+                        <div class="order-header-right-section">
+                            <p><b>Order ID:-</b></p>
+                            <p>9fkgx ukx-xnbskzv-fhbuvsdfa</p>
+                        </div>
+                    </div>
+
+                    <div class="order-details-section">
+                        <div class="order-item">
+                            <div class="product-image-container">
+                                <img
+                                    class="product-image"
+                                    src="images/products/adults-plain-cotton-tshirt-2-pack-teal.jpg"
+                                    alt="adults-plain-cotton-tshirt-2-pack-teal"
+                                />
+                            </div>
+                            <div class="product-details">
+                                <span>
+                                    <b>
+                                        adults-plain-cotton-tshirt-2-pack-teal
+                                    </b>
+                                </span>
+                                <p>Arriving on: December 17</p>
+                                <p>Quantity: 2</p>
+                                <button class="buy-again-button button-primary">
+                                    <img
+                                        class="buy-again-icon"
+                                        src="images/icons/buy-again.png"
+                                    />
+                                    <span class="buy-again-message"
+                                        >Buy it again</span
+                                    >
+                                </button>
+                            </div>
+                            <div class="product-actions">
+                                <a href="tracking.html">
+                                    <button
+                                        class="track-package-button button-secondary"
+                                    >
+                                        Track package
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
